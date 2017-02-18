@@ -28,17 +28,15 @@ Onde **'/'** é a raiz do seu virtualHost
 3. Altere o trecho de código que cria a conexão da aplicação com o servidor Mysql de acordo com a sua instalação.
 
 ```
+
 public function __construct() {
-    
     try {
-	   
        $this->dbConnect = new PDO("mysql:dbname=classe_usuarios;host=localhost", "usuario-banco-de-dados", "senha"); 
-    
     } catch(PDOException $error) {
-    
         echo "<strong>The connection failed: </strong>" . $error->getMessage();
-    
     }
+}
+
 ```
 
 ## Fonte:
