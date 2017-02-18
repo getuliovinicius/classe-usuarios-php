@@ -13,12 +13,19 @@ Classe para manipulação de usuarios de uma aplicação no banco de dados MySQL
 1. Descompactar os arquivo na raiz de um virtualHost. A estrura ficará parecida com:
 
 /delete.php
+
 /index.php
+
 /insert.php
+
 /LICENSE
+
 /README.md
+
 /selectbyid.php
+
 /update.php
+
 /Usuarios.php
 
 Onde **'/'** é a raiz do seu virtualHost
