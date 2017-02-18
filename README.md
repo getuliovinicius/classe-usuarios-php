@@ -42,4 +42,4 @@ Onde **'/'** é a raiz do seu virtualHost
 
 ## Fonte:
 
-Esta classe foi criada a partir da demostração feita pelo professor Bonieky Lacerda no curso de PHP do site [phpdozeroaoprofissional.com.br](http://www.phpdozeroaoprofissional.com.br). Ela foi adaptada para necessidades especificas e resolvi disponibilizar pois gastei algumas boas horas adaptando ela como processo de aprendizagem.
+Esta classe foi criada a partir da demostração feita pelo professor Bonieky Lacerda no curso de PHP do site [phpdozeroaoprofissional.com.br](http://www.phpdozeroaoprofissional.com.br). Ela foi adaptada para necessidades especificas e resolvi disponibilizar pois gastei algumas boas horas trabalhando nela como processo de aprendizagem.
