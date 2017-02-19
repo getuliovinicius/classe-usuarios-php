@@ -4,7 +4,7 @@ site_author: Getúlio Vinicius <getuliovinits@gmail.com>
 google_analytics: ['UA-70830801-11', 'getuliovinicius.github.io/classe-usuarios-php/']
 repo_url: https://github.com/getuliovinicius/classe-usuarios-php
 repo_name: GitHub
-edit_uri: blob/master/docs/
+edit_uri: blob/master/docs/mds/
 remote_branch: gh-pages
 remote_name: origin
 docs_dir: 'mds'
