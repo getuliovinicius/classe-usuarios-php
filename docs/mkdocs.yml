@@ -1,0 +1,13 @@
+site_name: classe-usuarios-php
+site_description: Guia de utilização da classe para manipulação de usuários de uma aplicação em PHP com banco de dados MySQL.
+site_author: Getúlio Vinicius <getuliovinits@gmail.com>
+google_analytics: ['UA-70830801-11', 'getuliovinicius.github.io/classe-usuarios-php/']
+repo_url: https://github.com/getuliovinicius/classe-usuarios-php
+repo_name: GitHub
+edit_uri: blob/master/docs/
+remote_branch: gh-pages
+remote_name: origin
+docs_dir: 'mds'
+pages:
+    - Inicio: index.md
+theme: readthedocs
