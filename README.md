@@ -10,25 +10,26 @@ Classe para manipulação de usuarios de uma aplicação no banco de dados MySQL
 
 ## Instalação:
 
-1. Descompactar os arquivo na raiz de um virtualHost. A estrura ficará parecida com:
+Descompactar os arquivo na raiz de um virtualHost. A estrura ficará parecida com:
 
-- /delete.php
-- /index.php
-- /insert.php
-- /LICENSE
-- /README.md
-- /selectbyid.php
-- /update.php
-- /Usuarios.php
+```
+/delete.php
+/index.php
+/insert.php
+/LICENSE
+/README.md
+/selectbyid.php
+/update.php
+/Usuarios.php
+```
 
 Onde **'/'** é a raiz do seu virtualHost
 
-2. Execute/Importe o arquivo classe_usuarios.sql no banco de dados Mysql por exemplo importando a partir do phpMyAdmin.
+Execute/Importe o arquivo classe_usuarios.sql no banco de dados Mysql por exemplo importando a partir do phpMyAdmin.
 
-3. Altere o trecho de código que cria a conexão da aplicação com o servidor Mysql de acordo com a sua instalação.
+Altere o trecho de código que cria a conexão da aplicação com o servidor Mysql de acordo com a sua instalação.
 
-```
-
+```php
 public function __construct() {
     try {
        $this->dbConnect = new PDO("mysql:dbname=classe_usuarios;host=localhost", "usuario-banco-de-dados", "senha"); 
