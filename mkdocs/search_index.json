@@ -1,0 +1,34 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "classe-usuarios-php\n\n\nClasse para manipula\u00e7\u00e3o de usuarios de uma aplica\u00e7\u00e3o no banco de dados MySQL com PHP.\n\n\nRequisitos:\n\n\n\n\nWeb Server: Apache 2.4.x ou superior;\n\n\nLinguagem: PHP 5.6.x ou superior;\n\n\nBanco de dados: MySQL Server 5.7.x ou superior \n\n\n\n\nInstala\u00e7\u00e3o:\n\n\nDescompactar os arquivo na raiz de um virtualHost. A estrura ficar\u00e1 parecida com:\n\n\n/delete.php\n/index.php\n/insert.php\n/LICENSE\n/README.md\n/selectbyid.php\n/update.php\n/Usuarios.php\n\n\n\n\nOnde \n'/'\n \u00e9 a raiz do seu virtualHost\n\n\nExecute/Importe o arquivo classe_usuarios.sql no banco de dados Mysql por exemplo importando a partir do phpMyAdmin.\n\n\nAltere o trecho de c\u00f3digo que cria a conex\u00e3o da aplica\u00e7\u00e3o com o servidor Mysql de acordo com a sua instala\u00e7\u00e3o.\n\n\npublic function __construct() {\n    try {\n       $this-\ndbConnect = new PDO(\nmysql:dbname=classe_usuarios;host=localhost\n, \nusuario-banco-de-dados\n, \nsenha\n); \n    } catch(PDOException $error) {\n        echo \nstrong\nThe connection failed: \n/strong\n . $error-\ngetMessage();\n    }\n}\n\n\n\n\n\nFonte:\n\n\nEsta classe foi criada a partir da demostra\u00e7\u00e3o feita pelo professor Bonieky Lacerda no curso de PHP do site \nphpdozeroaoprofissional.com.br\n. Ela foi adaptada para necessidades especificas e resolvi disponibilizar pois gastei algumas boas horas trabalhando nela como processo de aprendizagem.\n\n\nLicen\u00e7a:\n\n\nGNU GENERAL PUBLIC LICENSE - Version 3, 29 June 2007\n.", 
+            "title": "Inicio"
+        }, 
+        {
+            "location": "/#classe-usuarios-php", 
+            "text": "Classe para manipula\u00e7\u00e3o de usuarios de uma aplica\u00e7\u00e3o no banco de dados MySQL com PHP.", 
+            "title": "classe-usuarios-php"
+        }, 
+        {
+            "location": "/#requisitos", 
+            "text": "Web Server: Apache 2.4.x ou superior;  Linguagem: PHP 5.6.x ou superior;  Banco de dados: MySQL Server 5.7.x ou superior", 
+            "title": "Requisitos:"
+        }, 
+        {
+            "location": "/#instalacao", 
+            "text": "Descompactar os arquivo na raiz de um virtualHost. A estrura ficar\u00e1 parecida com:  /delete.php\n/index.php\n/insert.php\n/LICENSE\n/README.md\n/selectbyid.php\n/update.php\n/Usuarios.php  Onde  '/'  \u00e9 a raiz do seu virtualHost  Execute/Importe o arquivo classe_usuarios.sql no banco de dados Mysql por exemplo importando a partir do phpMyAdmin.  Altere o trecho de c\u00f3digo que cria a conex\u00e3o da aplica\u00e7\u00e3o com o servidor Mysql de acordo com a sua instala\u00e7\u00e3o.  public function __construct() {\n    try {\n       $this- dbConnect = new PDO( mysql:dbname=classe_usuarios;host=localhost ,  usuario-banco-de-dados ,  senha ); \n    } catch(PDOException $error) {\n        echo  strong The connection failed:  /strong  . $error- getMessage();\n    }\n}", 
+            "title": "Instala\u00e7\u00e3o:"
+        }, 
+        {
+            "location": "/#fonte", 
+            "text": "Esta classe foi criada a partir da demostra\u00e7\u00e3o feita pelo professor Bonieky Lacerda no curso de PHP do site  phpdozeroaoprofissional.com.br . Ela foi adaptada para necessidades especificas e resolvi disponibilizar pois gastei algumas boas horas trabalhando nela como processo de aprendizagem.", 
+            "title": "Fonte:"
+        }, 
+        {
+            "location": "/#licenca", 
+            "text": "GNU GENERAL PUBLIC LICENSE - Version 3, 29 June 2007 .", 
+            "title": "Licen\u00e7a:"
+        }
+    ]
+}
