@@ -24,10 +24,8 @@ Descompactar os arquivo na raiz de um _virtualHost_. A estrutura ficará parecid
 /Usuarios.php
 ```
 
-Onde **'/'** é a raiz do seu virtualHost
-
-Execute/Importe o arquivo classe_usuarios.sql no banco de dados Mysql por exemplo importando a partir do phpMyAdmin.
-
+Onde `/` é a raiz do seu _virtualHost_
+Execute/Importe o arquivo classe_usuarios.sql no banco de dados _Mysql_. Por exemplo utilizando o _phpMyAdmin_.
 Altere o trecho de código que cria a conexão da aplicação com o servidor Mysql de acordo com a sua instalação.
 
 ``` php
@@ -43,3 +41,7 @@ public function __construct() {
 ## Fonte:
 
 Esta classe foi criada a partir da demostração feita pelo professor Bonieky Lacerda no curso de PHP do site [phpdozeroaoprofissional.com.br](http://www.phpdozeroaoprofissional.com.br). Ela foi adaptada para necessidades especificas e resolvi disponibilizar pois gastei algumas boas horas trabalhando nela como processo de aprendizagem.
+
+## Licença:
+
+[GNU GENERAL PUBLIC LICENSE - Version 3, 29 June 2007](https://github.com/getuliovinicius/classe-usuarios-php/blob/master/LICENSE).
