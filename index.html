@@ -32,7 +32,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-70830801-11', 'getuliovinicius.github.io/classe-usuarios-php/');
+      ga('create', 'UA-70830801-11', 'auto');
       ga('send', 'pageview');
   </script>
   
@@ -55,28 +55,43 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 current">
-        <a class="current" href=".">Inicio</a>
-        
-            <ul>
+            <li class="toctree-l1 current">
+		
+    <a class="current" href=".">Inicio</a>
+    <ul class="subnav">
             
-                <li class="toctree-l3"><a href="#classe-usuarios-php">classe-usuarios-php</a></li>
-                
-                    <li><a class="toctree-l4" href="#requisitos">Requisitos:</a></li>
-                
-                    <li><a class="toctree-l4" href="#instalacao">Instalação:</a></li>
-                
-                    <li><a class="toctree-l4" href="#fonte">Fonte:</a></li>
-                
-                    <li><a class="toctree-l4" href="#licenca">Licença:</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l2"><a href="#classe-usuarios-php">classe-usuarios-php</a></li>
+    
+        <ul>
         
-    </li>
-<li>
+            <li><a class="toctree-l3" href="#requisitos">Requisitos:</a></li>
+        
+            <li><a class="toctree-l3" href="#instalacao">Instalação:</a></li>
+        
+            <li><a class="toctree-l3" href="#fonte">Fonte:</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#classe-usuarios-php_1">classe-usuarios-php</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#requisitos_1">Requisitos:</a></li>
+        
+            <li><a class="toctree-l3" href="#instalacao_1">Instalação:</a></li>
+        
+            <li><a class="toctree-l3" href="#fonte_1">Fonte:</a></li>
+        
+            <li><a class="toctree-l3" href="#licenca">Licença:</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -113,42 +128,75 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="classe-usuarios-php">classe-usuarios-php</h1>
-<p>Classe para manipulação de usuarios de uma aplicação no banco de dados MySQL com PHP.</p>
-<h2 id="requisitos">Requisitos:</h2>
+                <h1 id="classe-usuarios-php">classe-usuarios-php<a class="headerlink" href="#classe-usuarios-php" title="Permanent link">&para;</a></h1>
+<p>Classe para manipulação de usuários de uma aplicação no banco de dados MySQL com PHP.</p>
+<h2 id="requisitos">Requisitos:<a class="headerlink" href="#requisitos" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Web Server: Apache 2.4.x ou superior;</li>
 <li>Linguagem: PHP 5.6.x ou superior;</li>
-<li>Banco de dados: MySQL Server 5.7.x ou superior </li>
+<li>Banco de dados: MySQL Server 5.7.x ou superior</li>
 </ul>
-<h2 id="instalacao">Instalação:</h2>
-<p>Descompactar os arquivo na raiz de um virtualHost. A estrura ficará parecida com:</p>
-<pre><code>/delete.php
+<h2 id="instalacao">Instalação:<a class="headerlink" href="#instalacao" title="Permanent link">&para;</a></h2>
+<p>Descompactar os arquivo na raiz de um <em>virtualHost</em>. A estrutura ficará parecida com:</p>
+<pre class="codehilite"><code class="language-sh">/delete.php
 /index.php
 /insert.php
 /LICENSE
 /README.md
 /selectbyid.php
 /update.php
-/Usuarios.php
-</code></pre>
+/Usuarios.php</code></pre>
 
-<p>Onde <strong>'/'</strong> é a raiz do seu virtualHost</p>
+
+<p>Onde <strong>&rsquo;/&rsquo;</strong> é a raiz do seu virtualHost</p>
 <p>Execute/Importe o arquivo classe_usuarios.sql no banco de dados Mysql por exemplo importando a partir do phpMyAdmin.</p>
 <p>Altere o trecho de código que cria a conexão da aplicação com o servidor Mysql de acordo com a sua instalação.</p>
-<pre><code class="php">public function __construct() {
+<pre class="codehilite"><code class="language-php">public function __construct() {
     try {
-       $this-&gt;dbConnect = new PDO(&quot;mysql:dbname=classe_usuarios;host=localhost&quot;, &quot;usuario-banco-de-dados&quot;, &quot;senha&quot;); 
+       $this-&gt;dbConnect = new PDO(&quot;mysql:dbname=classe_usuarios;host=localhost&quot;, &quot;usuario-banco-de-dados&quot;, &quot;senha&quot;);
     } catch(PDOException $error) {
         echo &quot;&lt;strong&gt;The connection failed: &lt;/strong&gt;&quot; . $error-&gt;getMessage();
     }
-}
+}</code></pre>
 
-</code></pre>
 
-<h2 id="fonte">Fonte:</h2>
+<h2 id="fonte">Fonte:<a class="headerlink" href="#fonte" title="Permanent link">&para;</a></h2>
 <p>Esta classe foi criada a partir da demostração feita pelo professor Bonieky Lacerda no curso de PHP do site <a href="http://www.phpdozeroaoprofissional.com.br">phpdozeroaoprofissional.com.br</a>. Ela foi adaptada para necessidades especificas e resolvi disponibilizar pois gastei algumas boas horas trabalhando nela como processo de aprendizagem.</p>
-<h2 id="licenca">Licença:</h2>
+<h1 id="classe-usuarios-php_1">classe-usuarios-php<a class="headerlink" href="#classe-usuarios-php_1" title="Permanent link">&para;</a></h1>
+<p>Classe para manipulação de usuarios de uma aplicação no banco de dados MySQL com PHP.</p>
+<h2 id="requisitos_1">Requisitos:<a class="headerlink" href="#requisitos_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Web Server: Apache 2.4.x ou superior;</li>
+<li>Linguagem: PHP 5.6.x ou superior;</li>
+<li>Banco de dados: MySQL Server 5.7.x ou superior</li>
+</ul>
+<h2 id="instalacao_1">Instalação:<a class="headerlink" href="#instalacao_1" title="Permanent link">&para;</a></h2>
+<p>Descompactar os arquivo na raiz de um virtualHost. A estrura ficará parecida com:</p>
+<pre class="codehilite"><code>/delete.php
+/index.php
+/insert.php
+/LICENSE
+/README.md
+/selectbyid.php
+/update.php
+/Usuarios.php</code></pre>
+
+
+<p>Onde <strong>&rsquo;/&rsquo;</strong> é a raiz do seu virtualHost</p>
+<p>Execute/Importe o arquivo classe_usuarios.sql no banco de dados Mysql por exemplo importando a partir do phpMyAdmin.</p>
+<p>Altere o trecho de código que cria a conexão da aplicação com o servidor Mysql de acordo com a sua instalação.</p>
+<pre class="codehilite"><code class="language-php">public function __construct() {
+    try {
+       $this-&gt;dbConnect = new PDO(&quot;mysql:dbname=classe_usuarios;host=localhost&quot;, &quot;usuario-banco-de-dados&quot;, &quot;senha&quot;);
+    } catch(PDOException $error) {
+        echo &quot;&lt;strong&gt;The connection failed: &lt;/strong&gt;&quot; . $error-&gt;getMessage();
+    }
+}</code></pre>
+
+
+<h2 id="fonte_1">Fonte:<a class="headerlink" href="#fonte_1" title="Permanent link">&para;</a></h2>
+<p>Esta classe foi criada a partir da demostração feita pelo professor Bonieky Lacerda no curso de PHP do site <a href="http://www.phpdozeroaoprofissional.com.br">phpdozeroaoprofissional.com.br</a>. Ela foi adaptada para necessidades especificas e resolvi disponibilizar pois gastei algumas boas horas trabalhando nela como processo de aprendizagem.</p>
+<h2 id="licenca">Licença:<a class="headerlink" href="#licenca" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/getuliovinicius/classe-usuarios-php/blob/master/LICENSE">GNU GENERAL PUBLIC LICENSE - Version 3, 29 June 2007</a>.</p>
               
             </div>
@@ -176,7 +224,7 @@
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/getuliovinicius/classe-usuarios-php" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/getuliovinicius/classe-usuarios-php" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
       
@@ -188,6 +236,6 @@
 </html>
 
 <!--
-MkDocs version : 0.16.1
-Build Date UTC : 2017-02-19 18:44:43
+MkDocs version : 0.16.3
+Build Date UTC : 2017-05-01 00:04:28
 -->
